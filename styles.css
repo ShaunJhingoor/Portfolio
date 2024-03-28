@@ -144,7 +144,7 @@ button {
   padding: 0.8em 1.4em;
   font-weight: 500;
   font-size: 0.9rem;
-  text-transform: lowercase;
+  /* text-transform: lowercase; */
   transition: transform 0.2s ease-in-out;
 }
 
@@ -202,6 +202,11 @@ button {
 .btn--icon:active {
   transform: translateY(-5px);
 }
+.btn--call {
+  padding-left: 26px; /* Add padding on the left side */
+  padding-right: 26px; /* Add padding on the right side */
+  margin-left: 20px;
+}
 
 /*========
   layout
@@ -236,6 +241,13 @@ main {
   text-transform: uppercase;
 }
 
+.contactInfo{
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: -1.5em;
+  text-transform: uppercase;
+}
+
 .nav__list {
   margin-right: 1.5em;
   display: flex;
@@ -264,8 +276,12 @@ main {
 }
 
 .about__desc {
-  font-size: 1rem;
+  font-size:20px;
   max-width: 600px;
+  line-height: 1.6;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: justify;
 }
 
 .about__desc,
@@ -286,7 +302,7 @@ main {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
-  grid-gap: 2em;
+  grid-gap: 4em;
 }
 
 .project {
@@ -324,7 +340,7 @@ main {
 }
 
 .skills__list {
-  max-width: 450px;
+  max-width: 900px;
   width: 95%;
   margin: 0 auto;
   display: flex;
@@ -337,7 +353,10 @@ main {
 }
 
 .contact {
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {
@@ -362,6 +381,81 @@ main {
   transition: transform 0.2s ease-in-out;
 }
 
+#imageMe{
+  width: 250px;
+  height: 250px;
+  border-radius: 300px;
+  border: black solid 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  margin-top: 50px;
+}
+#profileImage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cellExplorer{
+  width: 300px;
+  height: 150px;
+  border-radius: 20px;
+  border: black solid 2px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+#cellExplorer:hover {
+  transform: scale(1.1);
+  /* position: absolute; */
+  /* z-index: 9999; */
+  width: 302px;
+  height: 152px;
+  top: 0;
+  left: 0;
+}
+
+#allAdventure{
+  width: 300px;
+  height: 150px;
+  border-radius: 20px;
+  border: black solid 2px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+#allAdventure:hover{
+  transform: scale(1.1);
+  /* position: absolute; */
+  /* z-index: 9999; */
+  width: 302px;
+  height: 152px;
+  top: 0;
+  left: 0;
+}
+
+#teamMates{
+  width: 300px;
+  height: 150px;
+  border-radius: 20px;
+  border: black solid 2px;
+  cursor: pointer;
+}
+#teamMates:hover{
+  transform: scale(1.1);
+  /* position: absolute; */
+  /* z-index: 9999; */
+  width: 302px;
+  height: 152px;
+  top: 0;
+  left: 0;
+}
+
+/* #allAdventure:hover{
+  transform: scale(1.5);
+  position: absolute;
+  z-index: 9999;
+  width: 700px;
+  height: 300px;
+  top: 0;
+  left: 0;
+} */
 @media (max-width: 600px) {
   .header {
     height: 6em;

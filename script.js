@@ -11,7 +11,10 @@ const addThemeClass = (bodyClass, btnClass) => {
 const getBodyTheme = localStorage.getItem('portfolio-theme')
 const getBtnTheme = localStorage.getItem('portfolio-btn-theme')
 
-addThemeClass(getBodyTheme, getBtnTheme)
+const inititalTheme = getBodyTheme || 'dark'
+const inititalBTnTheme = getBtnTheme || 'fa-moon'
+
+addThemeClass(inititalTheme, inititalBTnTheme)
 
 const isDark = () => body.classList.contains('dark')
 
@@ -61,3 +64,20 @@ const scrollUp = () => {
 }
 
 document.addEventListener('scroll', scrollUp)
+
+const cellExplorerImage = document.getElementById('cellExplorer');
+
+cellExplorerImage.addEventListener('click', function() {
+  window.open('https://shaunjhingoor.github.io/JSproject/', '_blank');
+});
+
+const allAdventureImage = document.getElementById('allAdventure')
+allAdventureImage.addEventListener('click', function(){
+	window.open('https://alladventure.onrender.com/', '_blank')
+})
+
+const teamMatesImage = document.getElementById('teamMates')
+teamMatesImage.addEventListener('click', function(){
+	window.open('https://teammates.onrender.com/', '_blank')
+})
+

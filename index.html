@@ -19,7 +19,7 @@
     <title>Shaun Jhingoor</title>
   </head>
   <body class="light" id="top">
-
+<br>
       <nav class="nav center">
         <ul class="nav__list center">
           <li class="nav__list-item">
@@ -48,16 +48,38 @@
     </header>
 
     <main>
+      <div id="profileImage">
+        <img src="./assets/image.png" alt="profile" id="imageMe">
+      </div>
       <div class="about center">
-        <h1>Hi, I am <span class="about__name">Shaun Jhingoor.</span></h1>
-        <h2 class="about__role">A Full Stack Developer.</h2>
+        <h1>Hi, I am <span class="about__name">Shaun Jhingoor</span></h1>
+        <h2 class="about__role">A Full Stack Developer</h2>
         <p class="about__desc">
-          Newly minted coding professional with Biology/Healthcare background seeking to apply dedication and acquired knowledge to create technical solutions. Dedicated to excellence and willing to learn and incorporate novel input and approaches. Proven history of taking responsibility and bringing projects to completion. Excited to learn, grow, and take ownership.
+            Innovative coding professional with Biology/Healthcare background. Demonstrated ability to meet deadlines
+consistently. Driven by determination; thrives under high-stress situations. Ready to commit to a company dedicated
+to helping others and provide advanced solutions.
         </p>
 
         <div class="about__contact center">
           <a href="https://docs.google.com/document/d/14ybrdUOAbHaNJkKKtqyzQjyX3hizu9eP6ot4ghaBBdc/edit?usp=sharing" target="_blank">
-            <span class="btn btn--outline">Resume</span>
+            <span class="btn btn--outline">View Resume</span>
+          </a>
+
+          <script>
+            function downloadResume() {
+                
+                var link = document.createElement('a');
+               
+                link.setAttribute('href', './assets/ShaunResume.pdf.zip');
+                
+                link.setAttribute('download', 'resume.zip');
+               
+                link.click();
+            }
+        </script>
+          
+             <a id="resumeDownload" href="#" onclick="downloadResume()">
+              <span class="btn btn--outline">Download Resume</span>
           </a>
 
           <a
@@ -86,9 +108,10 @@
 
         <div class="projects__grid">
           <div class="project">
+            <img src="./assets/cellExplorer.png" alt="cellExplorer" id="cellExplorer">
             <h3>Cell Explorer</h3>
             <p class="project__description">
-              Cell Explorer is a interactive demo. Users are able to compare two different cells a Eukaryotic and Prokaryotic. Also, users can learn more about organelles by clicking on the organelle. If interested click the links below.
+              Cell Explorer is an interactive demo where users compare Eukaryotic and Prokaryotic cells. Organelles, the cell components, can be clicked on for information. Links below to view github repository and live site.
             </p>
             <ul class="project__stack">
               <li class="project__stack-item">Canvas</li>
@@ -116,9 +139,10 @@
           </div>
 
           <div class="project">
+            <img src="./assets/allAdventure.png" alt="allAdventure" id="allAdventure">
             <h3>All Adventure</h3>
             <p class="project__description">
-              All Adventure is a full stack application which is a clone of All Trails. Users are able to view trails all throughout New York on a interactive google map that zooms in on the trail the user is interested in. Also, users can view and make reviews and rating for a trail. If interested click the links below to learn more.
+              All Adventure is a full stack application modeled off All Trails. Users are able to view trails all throughout New York on a interactive Google Map and zoom in on the trail of interest. Users can view and write reviews and ratings for a trail. Links below to view github repository and live site.
             </p>
             </p>
             <ul class="project__stack">
@@ -149,9 +173,10 @@
           </div>
 
           <div class="project">
+            <img src="./assets/teamMates.png" alt="teamMates" id="teamMates">
             <h3>Team Mates</h3>
             <p class="project__description">
-              Team Mates is a full stack application which was complicated in a team of four. Users are able to see sports near them on google maps, and filter via difficulty, range from them, and category of sport they are interested in. Users can also create sporting events, and say wheather or not they will attend an event. If interested click the links below to learn more.
+              Team Mates is a full stack application incorporating Google Maps. Completed in a team of four. Users can find or create sporting events by location, and filter by sport category, difficulty, and distance. Profiles can be created to indicate attendance and add friends. Links below to view github repository and live site.
             </p>
             <ul class="project__stack">
               <li class="project__stack-item">CSS</li>
@@ -187,32 +212,35 @@
       <section class="section skills" id="skills">
         <h2 class="section__title">Skills</h2>
         <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">HTML</li>
-          <li class="skills__list-item btn btn--plain">CSS</li>
           <li class="skills__list-item btn btn--plain">JavaScript</li>
           <li class="skills__list-item btn btn--plain">Ruby</li>
           <li class="skills__list-item btn btn--plain">React</li>
           <li class="skills__list-item btn btn--plain">Redux</li>
-          <li class="skills__list-item btn btn--plain">Git</li>
+          <li class="skills__list-item btn btn--plain">Rails</li>
+          <li class="skills__list-item btn btn--plain">PostgreSQL</li>
           <li class="skills__list-item btn btn--plain">Mongo db</li>
+          <li class="skills__list-item btn btn--plain">AWS S3</li>
           <li class="skills__list-item btn btn--plain">Express</li>
           <li class="skills__list-item btn btn--plain">Node.JS</li>
-          <li class="skills__list-item btn btn--plain">PostgreSQL</li>
           <li class="skills__list-item btn btn--plain">SQL</li>
-          <li class="skills__list-item btn btn--plain">AWS S3</li>
           <li class="skills__list-item btn btn--plain">Google API</li>
+          <li class="skills__list-item btn btn--plain">Git</li>
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
         </ul>
       </section>
 
-     
+     <br>
+      <h2 class="contactInfo">Contact</h2>
       <section class="section contact center" id="contact">
-        <h2 class="section__title">Contact</h2>
+        <br>
         <a href="mailto:Jhingoor1945@gmail.com" >
           <span class="btn btn--outline">Email me</span>
         </a>
         <br>
+        <br>
         <a href="tel:{516-361-5945}" >
-          <span class="btn btn--outline">Call me</span>
+          <span class="btn btn--outline btn--call">Call me</span>
         </a>
       </section>
       <br>
