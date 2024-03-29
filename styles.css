@@ -412,6 +412,12 @@ main {
   left: 0;
 }
 
+@keyframes wiggle {
+  0% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+  100% { transform: rotate(-2deg); }
+}
+
 #allAdventure{
   width: 300px;
   height: 150px;
