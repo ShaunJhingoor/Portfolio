@@ -132,11 +132,12 @@ button {
   color: var(--clr-fg);
   text-transform: lowercase;
   font-weight: 500;
+  font-size: 1.5rem;
 }
 
 .link--icon {
   color: var(--clr-fg);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .btn {
@@ -203,8 +204,8 @@ button {
   transform: translateY(-5px);
 }
 .btn--call {
-  padding-left: 26px; /* Add padding on the left side */
-  padding-right: 26px; /* Add padding on the right side */
+  padding-left: 26px; 
+  padding-right: 26px; 
   margin-left: 20px;
 }
 
@@ -453,6 +454,14 @@ main {
   left: 0;
 }
 
+#btn-theme {
+  font-size: 1.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+#btn-theme:hover {
+  transform: scale(1.2);
+}
 /* #allAdventure:hover{
   transform: scale(1.5);
   position: absolute;
