@@ -282,7 +282,8 @@ main {
   line-height: 1.6;
   font-weight: bold;
   letter-spacing: 0.5px;
-  text-align: justify;
+  /* text-align: justify; */
+  /* text-align: center; */
 }
 
 .about__desc,
@@ -402,22 +403,23 @@ main {
   border: black solid 2px;
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 #cellExplorer:hover {
   transform: scale(1.1);
   /* position: absolute; */
   /* z-index: 9999; */
-  width: 302px;
-  height: 152px;
+  /* width: 302px;
+  height: 152px; */
   top: 0;
   left: 0;
 }
 
-@keyframes wiggle {
+/* @keyframes wiggle {
   0% { transform: rotate(-2deg); }
   50% { transform: rotate(2deg); }
   100% { transform: rotate(-2deg); }
-}
+} */
 
 #allAdventure{
   width: 300px;
@@ -426,13 +428,14 @@ main {
   border: black solid 2px;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px;
 }
 #allAdventure:hover{
   transform: scale(1.1);
   /* position: absolute; */
   /* z-index: 9999; */
-  width: 302px;
-  height: 152px;
+  /* width: 302px;
+  height: 152px; */
   top: 0;
   left: 0;
 }
@@ -443,13 +446,14 @@ main {
   border-radius: 20px;
   border: black solid 2px;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 #teamMates:hover{
   transform: scale(1.1);
   /* position: absolute; */
   /* z-index: 9999; */
-  width: 302px;
-  height: 152px;
+  /* width: 302px;
+  height: 152px; */
   top: 0;
   left: 0;
 }
