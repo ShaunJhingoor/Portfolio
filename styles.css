@@ -498,6 +498,7 @@ main {
     width: 0;
     overflow: hidden;
     transition: width 0.2s ease-in-out;
+    z-index: 10000;
   }
 
   .display-nav-list {
