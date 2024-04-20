@@ -499,7 +499,7 @@ main {
     overflow: hidden;
     transition: width 0.2s ease-in-out;
     z-index: 10000;
-    margin-left: 2em;
+  
   }
 
   .display-nav-list {
@@ -512,12 +512,13 @@ main {
 
   .nav__hamburger {
     display: flex;
-    margin-left: 2em;
+    margin-left: 1em;
   }
 
   .about {
-    align-items: flex-start;
+    align-items: center;
     margin-top: 2em;
+    margin-left: 2em;
   }
 
   .footer {
@@ -527,5 +528,8 @@ main {
 
   .scroll-container {
     display: none;
+  }
+  #btn-theme{
+    margin-left: 1em;
   }
 }
