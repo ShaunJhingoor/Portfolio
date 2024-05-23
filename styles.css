@@ -453,10 +453,6 @@ main {
 }
 #teamMates:hover{
   transform: scale(1.1);
-  /* position: absolute; */
-  /* z-index: 9999; */
-  /* width: 302px;
-  height: 152px; */
   top: 0;
   left: 0;
 }
@@ -526,8 +522,9 @@ main {
     margin-top: 3em;
   }
 
-  .scroll-container {
-    display: none;
+  .scroll-top {
+    right: 10px;
+    font-size: 20px;
   }
   #btn-theme{
     margin-left: 1em;
