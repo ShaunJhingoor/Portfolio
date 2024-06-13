@@ -69,7 +69,34 @@ document.addEventListener('DOMContentLoaded', () => {
 	teamMatesImage.addEventListener('click', function() {
 	  window.open('https://teammates.onrender.com/', '_blank');
 	});
+	const carousel = document.querySelector('.carousel');
+  const prevButton = document.querySelector('.carousel-control.prev');
+  const nextButton = document.querySelector('.carousel-control.next');
+  let currentIndex = 0;
+
+  const updateCarousel = () => {
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+  };
+
+  prevButton.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+    } else {
+      currentIndex = carousel.children.length - 1;
+    }
+    updateCarousel();
   });
+
+  nextButton.addEventListener('click', () => {
+    if (currentIndex < carousel.children.length - 1) {
+      currentIndex++;
+    } else {
+      currentIndex = 0;
+    }
+    updateCarousel();
+  });
+});
+
   
 
 

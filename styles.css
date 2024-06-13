@@ -465,6 +465,52 @@ main {
 #btn-theme:hover {
   transform: scale(1.2);
 }
+.carousel-container {
+  position: relative;
+  max-width: 600px;
+  margin: 2em auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 5em;
+  text-align: center;
+  background-color: var(--clr-bg-alt);
+  border: 2px solid var(--clr-primary);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--clr-primary);
+  color: var(--clr-bg);
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.carousel-control.prev {
+  left: 0.5em;
+}
+
+.carousel-control.next {
+  right: 0.5em;
+}
+
+.carousel-control:hover {
+  background-color: var(--clr-fg-alt);
+}
 /* #allAdventure:hover{
   transform: scale(1.5);
   position: absolute;
@@ -474,6 +520,30 @@ main {
   top: 0;
   left: 0;
 } */
+
+@keyframes blueShimmer {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* GitHub link hover effect */
+.link.otherInterestBlue:hover {
+  animation: blueShimmer 2s infinite;
+  color: blue; /* Optionally, you can change the color to blue */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Optional: style the link to remove underline and set initial color */
+.link.otherInterestBlue {
+  color: inherit; /* Inherit color from parent, can be customized */
+  text-decoration: none;
+}
+
+
 @media (max-width: 600px) {
   .header {
     height: 6em;
@@ -485,7 +555,7 @@ main {
 
   .nav__list {
     flex-direction: column;
-    padding: 4em 0;
+    padding: 2em 0;
     position: absolute;
     right: 0;
     left: 0;
