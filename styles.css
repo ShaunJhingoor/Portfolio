@@ -33,6 +33,7 @@ body {
   --clr-fg-alt: #444;
   --clr-primary: #2978b5;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
 }
 
 .dark {
@@ -193,6 +194,7 @@ button {
 .btn--icon {
   padding: 0;
   font-size: 1.2rem;
+   margin-top: 1.5em;
 }
 
 .btn--icon:hover,
@@ -252,6 +254,7 @@ main {
 .nav__list {
   margin-right: 1.5em;
   display: flex;
+  margin-top: 1.5em;
 }
 
 .nav__list-item {
@@ -297,6 +300,7 @@ main {
 
 .about .btn--outline {
   margin-right: 1em;
+ 
 }
 
 .projects__grid {
@@ -564,7 +568,7 @@ main {
 
   .nav__list {
     flex-direction: column;
-    padding: 2em 0;
+    padding: 1.5em 0;
     position: absolute;
     right: 0;
     left: 0;
@@ -574,7 +578,7 @@ main {
     overflow: hidden;
     transition: width 0.2s ease-in-out;
     z-index: 10000;
-  
+    margin-top: 0;
   }
 
   .display-nav-list {
