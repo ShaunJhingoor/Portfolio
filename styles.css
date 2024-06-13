@@ -592,6 +592,7 @@ main {
   .nav__hamburger {
     display: flex;
     margin-left: 1em;
+    margin-top: 1.9em
   }
 
   .about {
@@ -611,5 +612,6 @@ main {
   }
   #btn-theme{
     margin-left: 1em;
+    margin-top: .6em;
   }
 }
