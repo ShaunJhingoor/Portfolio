@@ -521,6 +521,7 @@ main {
   left: 0;
 } */
 
+/* Keyframe animation for blue shimmer effect */
 @keyframes blueShimmer {
   0% {
     filter: hue-rotate(0deg);
@@ -530,18 +531,26 @@ main {
   }
 }
 
-/* GitHub link hover effect */
-.link.otherInterestBlue:hover {
-  animation: blueShimmer 2s infinite;
-  color: blue; /* Optionally, you can change the color to blue */
-  text-decoration: underline; /* Underline on hover */
+@keyframes blueShimmer {
+  0% {
+    color: #4682b4; 
+  }
+  50% {
+    color: #87ceeb; 
+  }
+  100% {
+    color: #4682b4; 
+  }
 }
 
-/* Optional: style the link to remove underline and set initial color */
+
 .link.otherInterestBlue {
-  color: inherit; /* Inherit color from parent, can be customized */
-  text-decoration: none;
+  position: relative; 
+  text-decoration: none; 
+  color: #4682b4;
+  animation: blueShimmer 1.5s infinite; 
 }
+
 
 
 @media (max-width: 600px) {
