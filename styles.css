@@ -454,6 +454,7 @@ main {
   border: black solid 2px;
   cursor: pointer;
   margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
 }
 #teamMates:hover{
   transform: scale(1.1);
